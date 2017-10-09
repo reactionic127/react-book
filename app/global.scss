@@ -1,0 +1,35 @@
+@import '~normalize.css/normalize';
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+
+$themeColor1: #FFFFFF;
+$themeColor2: #E2E1D9;
+$themeColor3: #FF5A09;
+$themeColor4: #3e3e3e;
+$themeColor5: #F1F1F1;
+
+
+body {
+    background-color: $themeColor5;
+    font-family: 'Inconsolata', helvetica, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    color: $themeColor4;
+    padding-top: 10px;
+    background-color: $themeColor2;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    outline: 0
+}

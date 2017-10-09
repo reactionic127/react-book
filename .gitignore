@@ -1,0 +1,15 @@
+# Osx
+.DS_Store
+
+# Node
+node_modules
+npm-debug.log
+
+# build app
+build
+
+# Webstorm IDE
+.idea/
+
+.env
+Procfile

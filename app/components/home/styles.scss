@@ -1,0 +1,86 @@
+@import '../../global.scss';
+
+.app-jumbotron {
+    background: url('../../public/img/home-book-bg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 500px;
+    position: relative;
+
+    h1 {
+        margin-top: 110px;
+        color: $themeColor4;
+        text-align: center;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+    }
+
+    h3 {
+        @extend h1;
+        margin-top: 0;
+    }
+
+}
+
+.guest-span {
+    color: $themeColor3;
+}
+
+.guest {
+    font-weight: bold;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(218, 225, 227, 0.4);
+}
+
+.app-row {
+    margin-bottom: 120px;
+    padding: 0 25px;
+    div {
+        padding: 25px;
+        line-height: 2;
+    }
+    h2 {
+        text-align: center;
+        color: $themeColor3;
+    }
+
+    img {
+        display: block;;
+        margin: 0 auto;
+        width: 130px;
+    }
+
+}
+
+@media (min-width: 416px) and (max-width: 766px) {
+    .app-jumbotron {
+        h1 {
+            margin-top: 130px;
+            font-size: 3em;
+        }
+        h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .app-jumbotron {
+        min-height: 400px;
+        h1 {
+            margin-top: 100px;
+        }
+        h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+    }
+}

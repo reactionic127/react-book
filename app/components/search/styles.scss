@@ -1,0 +1,42 @@
+@import '../../global.scss';
+
+.lib-form {
+    width: 400px;
+    margin: 50px auto;
+
+    .btn {
+        background-color: $themeColor2;
+    }
+}
+
+.searchError {
+    width: 400px;
+    margin: 20px auto;
+}
+
+.divSpinner {
+    margin: 0 auto;
+    width: 80%;
+}
+.spinner {
+    margin: 100px auto;
+    width: 40px;
+}
+
+@media screen and (max-width: 415px) {
+    .lib-form {
+        width: 360px;
+    }
+    .searchError {
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .lib-form {
+        width: 300px;
+    }
+    .searchError {
+        width: 300px;
+    }
+}
